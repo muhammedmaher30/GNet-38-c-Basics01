@@ -1,18 +1,17 @@
-﻿using System.Numerics;
-using System.Timers;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-
+﻿
 namespace first_Application
 {
     internal class Program
     {
-        class Book
-        {
-            public string Title = "C# Basics";
-            public int Pages = 200;
-        }
         static void Main(string[] args)
         {
+            // class Book
+            //{
+            //  public string Title = "C# Basics";
+            //public int Pages = 200;
+            //}
+            //static void Main(string[] args)
+            //{
             #region  Question-1 
             // 1-All questions use the same theme: a Book with a Title and Pages. Try each one yourself
             //before checking the answer.
@@ -51,20 +50,28 @@ namespace first_Application
             #region Qustion 5 
             //Write code that divides 10 by 0 inside a try block, catches the exception, prints "Cannot
             //divide by zero", and then prints "Done" in a finally block.
-            try
-            {
-                int x = 0;
-                int result = 10 / x;
-            }
-            catch (DivideByZeroException)
-            {
-                Console.WriteLine("Cannot divide by zero");
-            }
-            finally
-            {
-                Console.WriteLine("Done");
-            }
+            /// try
+            //{
+            //  int x = 0;
+            //int result = 10 / x;
+            //}
+            //catch (DivideByZeroException)
+            //{
+            //  Console.WriteLine("Cannot divide by zero");
+            //}
+            //finally
+            //{
+            //  Console.WriteLine("Done");
+            //}
             #endregion
+
+            #region Question 6 
+            //Declare an int pages = 300; then store it in a double variable without using a cast.
+            int pages = 300;
+            double result = pages;
+            Console.WriteLine(result);
+            #endregion
+
         }
     }
     }
