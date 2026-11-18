@@ -151,11 +151,18 @@ namespace first_Application
             #region Question 15 
             //Using title from the previous question, use ?? to print "Untitled" if title is null. Then use ??=
             // to assign title the value "Untitled" only if it's still null.
-            string? title = null;
-            Console.WriteLine(title ?? "Untitled");
-            title ??= "Untitled";
-            Console.WriteLine(title);
+            //string? title = null;
+            //Console.WriteLine(title ?? "Untitled");
+            //title ??= "Untitled";
+            // Console.WriteLine(title);
 
+            #endregion
+            #region Question 16 
+            //Given string? name = "Ahmed"; (you are sure it's not null here), assign it to a non-nullable
+            // string confirmedName using the ! operator.
+            string? name = "Ahmed";
+            string confirmedName = name!;
+            Console.WriteLine(confirmedName);
             #endregion
         }
     }
