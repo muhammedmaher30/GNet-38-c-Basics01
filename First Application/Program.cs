@@ -126,10 +126,15 @@ namespace first_Application
             #region Qustion 12 
             //Declare an int? year = null;. Print whether it has a value, then assign it 2023 and print its
             //value.
-            int? year = null;
-            Console.WriteLine(year.HasValue);
-            year = 2023;
-            Console.WriteLine(year.Value);
+            //int? year = null;
+            // Console.WriteLine(year.HasValue);
+            //year = 2023;
+            //Console.WriteLine(year.Value);
+            #endregion
+            #region Question 13 
+            //Declare a string? reviewer = null;. Print whether it is null.
+            string? reviewer = null;
+                   Console.WriteLine(reviewer == null);
             #endregion
         }
     }
