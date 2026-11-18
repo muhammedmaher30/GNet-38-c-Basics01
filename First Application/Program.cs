@@ -6,6 +6,11 @@ namespace first_Application
 {
     internal class Program
     {
+        class Book
+        {
+            public string Title = "C# Basics";
+            public int Pages = 200;
+        }
         static void Main(string[] args)
         {
             // class Book
@@ -133,8 +138,15 @@ namespace first_Application
             #endregion
             #region Question 13 
             //Declare a string? reviewer = null;. Print whether it is null.
-            string? reviewer = null;
-                   Console.WriteLine(reviewer == null);
+            //  string? reviewer = null;
+            //       Console.WriteLine(reviewer == null);
+            #endregion
+            #region Question 14 
+            //Declare a Book? book = null;. Use ?. to safely read book.Title without crashing the
+            // program, and print the result.
+
+            Book? book = null;
+            Console.WriteLine(book?.Title);
             #endregion
         }
     }
